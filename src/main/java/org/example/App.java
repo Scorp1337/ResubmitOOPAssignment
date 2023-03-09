@@ -27,10 +27,9 @@ public class App {
         ArtAlbum artAlbum2 = new ArtAlbum("Unchained", 100, 5);
         ArtAlbum artAlbum3 = new ArtAlbum("Atmosphere", 255, 10);
 
-        artAlbum1.addBooks("Blank canvas", 177);
-        System.out.println(artAlbum1.getPaperQuality());
-        artAlbum2.addBooks("Unchained", 100);
-        artAlbum3.addBooks("Atmosphere", 255);
+        artAlbum1.addBooks("Blank canvas");
+        artAlbum2.addBooks("Unchained");
+        artAlbum3.addBooks("Atmosphere");
 
 
         System.out.println();
@@ -39,9 +38,10 @@ public class App {
         Novel novel2 = new Novel("Baltagul", 250, "Crime");
         Novel novel3 = new Novel("Lord of the rings", 355, "Science Fiction");
 
-        novel1.addBooks("Don Quixote", 300);
-        novel2.addBooks("Baltagul", 250);
-        novel3.addBooks("Lord of the rings", 355);
+
+        novel1.addBooks("Don Quixote");
+        novel2.addBooks("Baltagul");
+        novel3.addBooks("Lord of the rings");
 
 
         System.out.println();

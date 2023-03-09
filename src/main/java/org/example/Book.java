@@ -9,9 +9,6 @@ public class Book {
     public int numberOfPages;
 
 
-    public Book() {
-        this("no name", 0);
-    }
 
     public Book(String name, int numberOfPages) {
         this.name = name;
@@ -44,9 +41,10 @@ public class Book {
                 ']';
     }
 
-    public void addBooks(String name, int numberOfPages) {
+    public void addBooks(String name) {
 
-        System.out.println("Book " + name + " has been added and it has " + numberOfPages + " pages.");
+
+        System.out.println("Book " + name + " added.");
 
     }
 

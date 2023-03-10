@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class Book {
@@ -10,28 +9,16 @@ public class Book {
 
 
 
+
+
     public Book(String name, int numberOfPages) {
         this.name = name;
         this.numberOfPages = numberOfPages;
     }
 
 
-    public String getName() {
-        return name;
-    }
-
-    public int getNumberOfPages() {
-        return numberOfPages;
-    }
 
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setNumberOfPages(int numberOfPages) {
-        this.numberOfPages = numberOfPages;
-    }
 
     @Override
     public String toString() {
@@ -41,16 +28,17 @@ public class Book {
                 ']';
     }
 
-    public void addBooks(String name) {
+    public void addBooks(String typeOfBook){
 
 
-        System.out.println("Book " + name + " added.");
+        System.out.println("You added a book of type: " + typeOfBook );
+
 
     }
 
-    public void deleteBook (){
-        this.name =null;
-        System.out.println("Book has been deleted.");
+    public void deleteBook(){
+        this.name = null;
+        System.out.println("Book deleted " + this.name);
     }
     public static void printBooks(List<Book> books) {
         for (Book book : books) {

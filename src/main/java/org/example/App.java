@@ -10,7 +10,8 @@ import static org.example.Book.printBooks;
 public class App {
     public static void main(String[] args) {
 
-        List<Book> books = new ArrayList<Book>();
+        List<Book> books = new ArrayList<>();
+
 
         Book book1 = new Book("Book1", 100);
         Book book2 = new Book("Book2", 200);
@@ -23,31 +24,28 @@ public class App {
         printBooks(books);
         System.out.println();
 
-        ArtAlbum artAlbum1 = new ArtAlbum("Blank canvas", 177, 7);
-        ArtAlbum artAlbum2 = new ArtAlbum("Unchained", 100, 5);
-        ArtAlbum artAlbum3 = new ArtAlbum("Atmosphere", 255, 10);
 
-        artAlbum1.addBooks("Blank canvas");
-        artAlbum2.addBooks("Unchained");
-        artAlbum3.addBooks("Atmosphere");
+        book1.addBooks("Novel");
+        book1.addBooks("Art Album");
+        book1.addBooks("Encyclopedia");
+
+        System.out.println();
+
+        book1.deleteBook();
+        book2.deleteBook();
+
+
+
+
+
+
+
+
 
 
         System.out.println();
 
-        Novel novel1 = new Novel("Don Quixote", 300, "Adventure");
-        Novel novel2 = new Novel("Baltagul", 250, "Crime");
-        Novel novel3 = new Novel("Lord of the rings", 355, "Science Fiction");
 
-
-        novel1.addBooks("Don Quixote");
-        novel2.addBooks("Baltagul");
-        novel3.addBooks("Lord of the rings");
-
-
-        System.out.println();
-
-        novel1.deleteBook();
-        artAlbum2.deleteBook();
 
     }
 
